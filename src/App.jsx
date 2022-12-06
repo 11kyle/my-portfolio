@@ -76,7 +76,7 @@ function App() {
             <h1 className="heading-lg primary-text-color">Projects</h1>
             <a className="paragraph link font-bold primary-text-color" href="#contact">Contact Me</a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 justify-items-center">
 
 
             <div className="relative mb-10 group">
