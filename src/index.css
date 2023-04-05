@@ -4,11 +4,10 @@
 
 @layer base {
   html {
-    background-color: #151515;
-    font-family: 'Space Grotesk', sans-serif;
-    /* padding-left: 16px;
-    padding-right: 16px; */
-    padding-top: 40px;
+    /* @apply bg-spotlight-green; */
+    /* @apply bg-[#EF412D]; */
+    /* background-color: #151515; */
+    font-family: 'Space Mono', monospace;
   }
   body {
     /* max-width: 1110px; */
