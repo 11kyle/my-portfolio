@@ -29,7 +29,7 @@ export default function Projects() {
           <div>
             <div className="aspect-w-3 aspect-h-2 w-full overflow-hidden rounded-lg">
               <img
-                src="/audiophile-desktop.png"
+                src="audiophile-desktop.png"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
                 className="h-full w-full object-cover object-center"
               />
@@ -54,7 +54,7 @@ export default function Projects() {
           <div>
             <div className="aspect-w-3 aspect-h-2 w-full overflow-hidden rounded-lg">
               <img
-                src="/skilled-desktop.png"
+                src="skilled-desktop.png"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
                 className="h-full w-full object-cover object-center"
               />
@@ -76,7 +76,7 @@ export default function Projects() {
           <div>
             <div className="aspect-w-3 aspect-h-2 w-full overflow-hidden rounded-lg border">
               <img
-                src="/dictionary-desktop.png"
+                src="dictionary-desktop.png"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
                 className="h-full w-full object-cover object-center"
               />
@@ -100,7 +100,7 @@ export default function Projects() {
           <div>
             <div className="aspect-w-3 aspect-h-2 w-full overflow-hidden rounded-lg">
               <img
-                src="/entertainment-desktop.png"
+                src="entertainment-desktop.png"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
                 className="h-full w-full object-cover object-center"
               />

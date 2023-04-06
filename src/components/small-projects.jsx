@@ -29,7 +29,7 @@ export default function SmallProjects() {
           <div>
             <div className="w-full overflow-hidden rounded-lg">
               <img
-                src="/nft-preview-tablet.png"
+                src="nft-preview-tablet.png"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
                 className="h-full w-full object-cover object-center"
               />
@@ -39,7 +39,7 @@ export default function SmallProjects() {
           <div>
             <div className="w-full overflow-hidden rounded-lg">
               <img
-                src="/qr-code-tablet.png"
+                src="qr-code-tablet.png"
                 alt="Front zipper pouch with included key ring."
                 className="h-full w-full object-cover object-center"
               />
@@ -49,7 +49,7 @@ export default function SmallProjects() {
           <div>
             <div className="w-full overflow-hidden rounded-lg">
               <img
-                src="/interactive-rating-tablet.png"
+                src="interactive-rating-tablet.png"
                 alt="Front zipper pouch with included key ring."
                 className="h-full w-full object-cover object-center"
               />
@@ -59,7 +59,7 @@ export default function SmallProjects() {
           <div>
             <div className="w-full overflow-hidden rounded-lg">
               <img
-                src="/interactive-pricing-tablet.png"
+                src="interactive-pricing-tablet.png"
                 alt="Front zipper pouch with included key ring."
                 className="h-full w-full object-cover object-center"
               />
