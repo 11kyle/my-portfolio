@@ -74,7 +74,7 @@ export default function Projects() {
           </div>
 
           <div>
-            <div className="aspect-w-3 aspect-h-2 w-full overflow-hidden rounded-lg">
+            <div className="aspect-w-3 aspect-h-2 w-full overflow-hidden rounded-lg border">
               <img
                 src="/dictionary-desktop.png"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
@@ -82,7 +82,7 @@ export default function Projects() {
               />
             </div>
             <p className="mt-8 text-base text-primary-black tracking-wide">
-              Interface for searching the dictionary. Built with Vue and Vite.
+              Interface for searching the dictionary. Light and dark modes. Three fonts variants. Built with Vue and Vite.
             </p>
             <div className="mt-3">
               <h4 className="text-lg font-exo-2 font-semibold">Developer Tools</h4>

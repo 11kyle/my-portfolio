@@ -1,11 +1,11 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
-const handleScroll = () => {
-  const element = document.getElementById("about")
-
-  element.scrollIntoView({behavior: 'smooth'} )
-}
-
 export default function Example() {
+
+  const handleScroll = () => {
+    const element = document.getElementById("about")
+  
+    element.scrollIntoView({behavior: 'smooth'} )
+  }
+
   return (
     <div className="relative isolate overflow-hidden bg-primary-orange">
       <div className="mx-auto max-w-5xl px-6 md:px-8 pt-10 pb-24 sm:pb-32 lg:flex">
@@ -20,30 +20,17 @@ export default function Example() {
           Frontend Web Developer
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            {/* <a href="#about" className="text-sm text-primary-black">
-              Learn more <span aria-hidden="true">→</span>
-            </a> */}
-            <button onClick={handleScroll} className="text-sm text-primary-black">
+            <button 
+              onClick={handleScroll} 
+              className="text-sm text-primary-black
+              relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-primary-black
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300">
               Learn more <span aria-hidden="true">→</span>
             </button>
           </div>
         </div>
-        {/* <div>
-          <div className="w-80 h-80 rounded-full overflow-hidden">
-            <img src={kj} className="object-cover" />
-          </div>
-        </div> */}
-        {/* <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-          <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="App screenshot"
-              width={2432}
-              height={1442}
-              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
-            />
-          </div>
-        </div> */}
       </div>
     </div>
   )
