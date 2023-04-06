@@ -1,12 +1,10 @@
-import projectThumbnailEcomerceWebsite from './assets/thumbnail-ecomerce-website.png';
-import projectThumbnailFilterList from './assets/thumbnail-filter-list.png';
 import About from './components/about';
 import Hero from './components/hero';
 import Layout from './components/layout';
 import Navbar from './components/navbar';
 import Projects from './components/projects';
 import SmallProjects from './components/small-projects';
-import LogoCloud from './components/logo-cloud';
+import Technologies from './components/technologies';
 
 function App() {
   return (
@@ -75,7 +73,7 @@ function App() {
         </section> */}
         <Projects />
         <SmallProjects />
-        <LogoCloud />
+        <Technologies />
       </Layout>
     </>
   )

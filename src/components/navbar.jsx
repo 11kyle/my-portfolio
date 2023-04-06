@@ -8,7 +8,6 @@ export default function Navbar() {
   const isScrolled = useSroll()
 
   return (
-    // <div className="bg-primary-orange">
     <div className={classNames(
       isScrolled ? 'bg-white shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]' : 'bg-primary-orange',
       'sticky top-0 z-10'

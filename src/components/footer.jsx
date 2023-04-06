@@ -43,6 +43,10 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      <div className="flex items-center justify-center text-gray-300 pb-10">
+        <span className="pt-1.5">&copy;</span>
+        <span>{new Date().getFullYear()} Kyle Johnson</span>
+      </div>
     </footer>
   )
 }

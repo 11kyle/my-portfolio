@@ -1,5 +1,9 @@
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import kj from "../assets/kj-thumbnail.jpg"
+const handleScroll = () => {
+  const element = document.getElementById("about")
+
+  element.scrollIntoView({behavior: 'smooth'} )
+}
 
 export default function Example() {
   return (
@@ -16,9 +20,12 @@ export default function Example() {
           Frontend Web Developer
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a href="#" className="text-sm text-primary-black">
+            {/* <a href="#about" className="text-sm text-primary-black">
               Learn more <span aria-hidden="true">→</span>
-            </a>
+            </a> */}
+            <button onClick={handleScroll} className="text-sm text-primary-black">
+              Learn more <span aria-hidden="true">→</span>
+            </button>
           </div>
         </div>
         {/* <div>
