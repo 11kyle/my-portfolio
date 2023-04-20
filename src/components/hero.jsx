@@ -3,7 +3,7 @@ export default function Hero() {
   const handleScroll = () => {
     const element = document.getElementById("about")
   
-    element.scrollIntoView({behavior: 'smooth'} )
+    element.scrollIntoView({behavior: 'smooth'})
   }
 
   return (

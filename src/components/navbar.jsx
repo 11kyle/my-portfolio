@@ -18,11 +18,17 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const isScrolled = useSroll()
 
-  const handleScroll = (id) => {
-    const element = document.getElementById(id)
-  
+  const closeMobileMenu = () => {
     setMobileMenuOpen(false)
-    element.scrollIntoView({behavior: 'smooth'} )
+  }
+
+  const handleScroll = (id) => {    
+    setMobileMenuOpen(false)
+    // Wait for the mobile menu close animation to finish before scrolling page
+    setTimeout(() => {
+      const element = document.getElementById(id)
+      element.scrollIntoView({behavior: 'smooth'})
+    }, 300);
   }
 
   return (
