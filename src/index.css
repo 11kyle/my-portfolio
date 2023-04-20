@@ -7,12 +7,17 @@
     /* @apply bg-spotlight-green; */
     /* @apply bg-[#EF412D]; */
     /* background-color: #151515; */
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
   }
   body {
     /* max-width: 1110px; */
     margin-left: auto;
     margin-right: auto;
+    /* background-color: #0f0f0f; */
+    /* background-color: #171717; */
+    background-color: #002244; /* Broncos Navy */
+
+    /* Broncos Orange #FB4F14 */
   }
 }
 

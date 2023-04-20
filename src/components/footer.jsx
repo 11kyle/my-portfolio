@@ -27,24 +27,24 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-black">
-      <div className="mx-auto max-w-[1110px] py-12 sm:py-24 px-4 md:px-8 md:flex md:items-center md:justify-between">
+    <footer className="bg-inherit">
+      <div className="mx-auto max-w-[1110px] py-12 px-4 md:hidden">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-white hover:text-gray-500">
+            <a key={item.name} href={item.href} className="text-slate-400 hover:text-broncos-orange">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-3xl leading-5 text-white">
+        {/* <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-center text-3xl font-exo-2 leading-5 text-white">
             kylejohnson
           </p>
-        </div>
+        </div> */}
       </div>
-      <div className="flex items-center justify-center text-gray-300 pb-10">
-        <span className="pt-1.5">&copy;</span>
+      <div className="flex items-center justify-center text-slate-400 pb-10">
+        <span>&copy;</span>
         <span>{new Date().getFullYear()} Kyle Johnson</span>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import About from './components/about';
 import Layout from './components/layout';
 import Projects from './components/projects';
 import SmallProjects from './components/small-projects';
-import Technologies from './components/technologies';
+// import Skills from './components/skills';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         </section> */}
         <Projects />
         <SmallProjects />
-        <Technologies />
+        {/* <Skills /> */}
       </Layout>
     </>
   )
