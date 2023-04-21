@@ -8,20 +8,28 @@ import { useElementOnScreen } from "../hooks/useElementOnScreen"
 
 const actions = [
   {
+    title: 'Dictionary web app',
+    content: 'Interface for searching the dictionary. Includes a dark mode and three fonts variants.',
+    repoHref: 'https://github.com/11kyle/dictionary-web-app',
+    liveHref: 'https://11kyle.github.io/dictionary-web-app/',
+    icon: FolderIcon,
+    tech: ['HTML5', 'CSS3', 'JS', 'API'],
+  },
+  {
     title: 'NFT preview card component',
     content: 'A beautiful, pixel-perfect display for NFTs. Utilizing a complimentary color pallete and added hover effects.',
-    repoHref: '#',
-    liveHref: '#',
+    repoHref: 'https://github.com/11kyle/nft-preview-card',
+    liveHref: 'https://11kyle.github.io/nft-preview-card/',
     icon: FolderIcon,
     tech: ['HTML5', 'CSS3'],
   },
   {
     title: 'Advice generator app',
-    content: '',
-    repoHref: '#',
-    liveHref: '#',
+    content: 'Get a random piece of advice from the Advive Slip API.',
+    repoHref: 'https://github.com/11kyle/advice-generator',
+    liveHref: 'https://11kyle.github.io/advice-generator/',
     icon: FolderIcon,
-    tech: [],
+    tech: ['HTML', 'CSS3', 'JS', 'API'],
   },
   {
     title: 'Age calculator app',
@@ -34,26 +42,26 @@ const actions = [
   {
     title: 'Interactive rating component',
     content: 'Collect user ratings with this interactive component. A two-view layout for displaying active and submitted states.',
-    repoHref: '#',
-    liveHref: '#',
+    repoHref: 'https://github.com/11kyle/interactive-rating',
+    liveHref: 'https://11kyle.github.io/interactive-rating/',
     icon: FolderIcon,
     tech: ['HTML5', 'CSS3', 'JS', 'React'],
   },
-  {
-    title: 'QR code component',
-    content: 'A simple static component for displaying a qr code with descriptive title and text.',
-    repoHref: '#',
-    liveHref: '#',
-    icon: FolderIcon,
-    tech: ['HTML5', 'CSS3'],
-  },
+  // {
+  //   title: 'QR code component',
+  //   content: 'A simple static component for displaying a qr code with descriptive title and text.',
+  //   repoHref: 'https://github.com/11kyle/qr-code',
+  //   liveHref: 'https://11kyle.github.io/qr-code/',
+  //   icon: FolderIcon,
+  //   tech: ['HTML5', 'CSS3'],
+  // },
   {
     title: 'Job listings with filtering',
-    content: '',
+    content: 'Great use of filtering in javascript. Set up with JSON data but can be updated to a full-stack application.',
     repoHref: 'https://github.com/11kyle/job-listings-filter',
     liveHref: 'https://11kyle.github.io/job-listings-filter/',
     icon: FolderIcon,
-    tech: ['HTML5', 'CSS3', 'JS', 'React'],
+    tech: ['HTML5', 'CSS3', 'JS', 'React', 'JSON'],
   },
 ]
 

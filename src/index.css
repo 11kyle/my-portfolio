@@ -4,39 +4,16 @@
 
 @layer base {
   html {
-    /* @apply bg-spotlight-green; */
-    /* @apply bg-[#EF412D]; */
-    /* background-color: #151515; */
     font-family: 'Roboto Mono', monospace;
   }
   body {
-    /* max-width: 1110px; */
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #0f0f0f; */
-    /* background-color: #171717; */
     background-color: #002244; /* Broncos Navy */
-
-    /* Broncos Orange #FB4F14 */
   }
 }
 
 @layer components {
-  .heading-xl {
-    @apply font-bold text-[48px] md:text-[72px] leading-[56px] md:leading-[88px] -tracking-[1.5px];
-  }
-  .heading-lg {
-    @apply font-bold text-[40px] md:text-[48px] leading-[56px] -tracking-[1.5px];
-  }
-  .heading-md {
-    @apply font-bold text-[32px] leading-[32px];
-  }
-  .heading-sm {
-    @apply font-bold text-[24px] leading-[32px];
-  }
-  .paragraph {
-    @apply font-medium text-[16px] md:text-[18px] leading-[28px];
-  }
   .primary-text-color {
     color: #FFFFFF;
   }
