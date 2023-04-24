@@ -42,7 +42,7 @@ export default function Navbar() {
       <nav className="flex justify-between items-center h-20 px-6 md:px-8 mx-auto">
         <div>
           <a 
-            href="/"
+            href="/my-portfolio/"
             className={classNames(
               isScrolled ? "hover:text-broncos-orange" : "hover:text-white",
               "font-bold text-2xl md:text-3xl font-exo-2 text-broncos-orange"
