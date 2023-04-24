@@ -5,6 +5,42 @@ import {
 import { useElementOnScreen } from "../hooks/useElementOnScreen";
 import SectionHeading from "./section-heading";
 
+const projects = [
+  {
+    id: 1,
+    name: "Hart InterCivic",
+    content: "Multipage website for an election company. Built with Wordpress and Tailwind.",
+    imgSrc: "hart-intercivic-desktop.webp",
+    imgAlt: "Hart InterCivic homepage",
+    repoHref: "#",
+    liveHref: "https://www.hartintercivic.com/",
+    tech: ["Wordpress", "JQuery", "Tailwind", "Plugins"],
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    name: "Audiophile",
+    content: "Full e-commerce website for audio products. Multi-page website. Built with React and Next.js.",
+    imgSrc: "audiophile-desktop.webp",
+    imgAlt: "",
+    repoHref: "https://github.com/11kyle/audiophile",
+    liveHref: "#",
+    tech: ["React", "Next.js", "Prisma", "MongoDB", "Tailwind"],
+    isFeatured: true,
+  },
+  {
+    id: 3,
+    name: "Skilled Landing Page",
+    content: "Landing page for e-learning website. Built with Vue and Vite.",
+    imgSrc: "skilled-desktop.webp",
+    imgAlt: "",
+    repoHref: "https://github.com/11kyle/skilled-landing-page",
+    liveHref: "https://11kyle.github.io/skilled-landing-page/",
+    tech: ["Vite", "Vue", "Tailwind"],
+    isFeatured: true,
+  },
+]
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -136,39 +172,3 @@ export default function Projects() {
     </div>
   )
 }
-
-const projects = [
-  {
-    id: 1,
-    name: "Hart InterCivic",
-    content: "Multipage website for an election company. Built with Wordpress and Tailwind.",
-    imgSrc: "hart-intercivic-desktop.webp",
-    imgAlt: "Hart InterCivic homepage",
-    repoHref: "#",
-    liveHref: "#",
-    tech: ["Wordpress", "JQuery", "Tailwind", "Plugins"],
-    isFeatured: true,
-  },
-  {
-    id: 2,
-    name: "Audiophile",
-    content: "Full e-commerce website for audio products. Multi-page website. Built with React and Next.js.",
-    imgSrc: "audiophile-desktop.webp",
-    imgAlt: "",
-    repoHref: "https://github.com/11kyle/audiophile",
-    liveHref: "#",
-    tech: ["React", "Next.js", "Prisma", "MongoDB", "Tailwind"],
-    isFeatured: true,
-  },
-  {
-    id: 3,
-    name: "Skilled Landing Page",
-    content: "Landing page for e-learning website. Built with Vue and Vite.",
-    imgSrc: "skilled-desktop.webp",
-    imgAlt: "",
-    repoHref: "https://github.com/11kyle/skilled-landing-page",
-    liveHref: "https://11kyle.github.io/skilled-landing-page/",
-    tech: ["Vite", "Vue", "Tailwind"],
-    isFeatured: true,
-  },
-]
