@@ -1,17 +1,17 @@
-import { useState, Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState, Fragment } from "react"
+import { Dialog, Transition } from "@headlessui/react"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useSroll } from "../hooks/useScroll"
 
 const navigation = [
-  { id: '01', name: 'About', href: 'about' },
-  { id: '02', name: 'Projects', href: 'projects' },
-  { id: '03', name: 'Small Projects', href: 'small-projects' },
-  { id: '04', name: 'Skills', href: 'skills' },
+  { id: "01", name: "About", href: "about" },
+  { id: "02", name: "Projects", href: "projects" },
+  { id: "03", name: "Small Projects", href: "small-projects" },
+  { id: "04", name: "Skills", href: "skills" },
 ]
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
 export default function Navbar() {
@@ -22,26 +22,31 @@ export default function Navbar() {
     setMobileMenuOpen(false)
   }
 
-  const handleScroll = (id) => {    
+  const handleScroll = (id) => {
+    const element = document.getElementById(id)
+    element.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const handleMobileScrollWithDelay = (id) => {
     setMobileMenuOpen(false)
     // Wait for the mobile menu close animation to finish before scrolling page
     setTimeout(() => {
       const element = document.getElementById(id)
-      element.scrollIntoView({behavior: 'smooth'})
-    }, 300);
+      element.scrollIntoView({ behavior: "smooth" })
+    }, 300) // close animation for mobile menu is 300
   }
 
   return (
     <header
       className={classNames(
-        isScrolled ? 'shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]' : '',
-        mobileMenuOpen ? '' : '',
-        'sticky top-0 z-10 bg-broncos-navy'
+        isScrolled ? "shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]" : "",
+        mobileMenuOpen ? "" : "",
+        "sticky top-0 z-10 bg-broncos-navy"
       )}
     >
       <nav className="flex justify-between items-center h-20 px-6 md:px-8 mx-auto">
         <div>
-          <a 
+          <a
             href="/my-portfolio/"
             className={classNames(
               isScrolled ? "hover:text-broncos-orange" : "hover:text-white",
@@ -65,11 +70,13 @@ export default function Navbar() {
         {/* Menu for non-mobile */}
         <div className="hidden md:flex md:gap-x-8">
           {navigation.map((item) => (
-            <button 
-              key={item.name} 
-              onClick={() => handleScroll(item.href)} 
+            <button
+              key={item.name}
+              onClick={() => handleScroll(item.href)}
               className={classNames(
-                isScrolled ? "hover:text-broncos-orange" : "hover:text-broncos-orange",
+                isScrolled
+                  ? "hover:text-broncos-orange"
+                  : "hover:text-broncos-orange",
                 "text-slate-400 text-xs"
               )}
             >
@@ -94,7 +101,7 @@ export default function Navbar() {
             {/* <div className="fixed inset-0 z-50" /> */}
             <div className="fixed z-40 inset-0 bg-slate-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
-          
+
           <Transition.Child
             as={Fragment}
             enter="transition ease-in-out duration-300 transform"
@@ -121,7 +128,7 @@ export default function Navbar() {
                     {navigation.map((item) => (
                       <button
                         key={item.name}
-                        onClick={() => handleScroll(item.href)}
+                        onClick={() => handleMobileScrollWithDelay(item.href)}
                         className="w-full flex flex-col items-center rounded-lg px-3 py-2 text-sm font-semibold leading-7 text-slate-400 hover:bg-[#0D2D4E]"
                       >
                         <span className="text-broncos-orange">{item.id}.</span>
