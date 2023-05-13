@@ -12,7 +12,7 @@ const projects = [
     content: "Multipage website for an election company. Built with Wordpress and Tailwind.",
     imgSrc: "hart-intercivic-desktop.webp",
     imgAlt: "Hart InterCivic homepage",
-    repoHref: "#",
+    repoHref: "",
     liveHref: "https://www.hartintercivic.com/",
     tech: ["Wordpress", "JQuery", "Tailwind", "Plugins"],
     isFeatured: true,
@@ -24,7 +24,7 @@ const projects = [
     imgSrc: "audiophile-desktop.webp",
     imgAlt: "",
     repoHref: "https://github.com/11kyle/audiophile",
-    liveHref: "#",
+    liveHref: "",
     tech: ["React", "Next.js", "Prisma", "MongoDB", "Tailwind"],
     isFeatured: true,
   },
@@ -95,22 +95,28 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex group-odd:md:justify-end my-6">
-                  <span
-                    className="text-slate-400 hover:text-broncos-orange transition duration-300"
-                    aria-hidden="true"
-                  >
-                    <a href={project.repoHref} target="_blank">
-                      <CodeBracketIcon className="w-5 h-5" />
-                    </a>
-                  </span>
-                  <span
-                    className="text-slate-400 hover:text-broncos-orange transition duration-300 ml-2"
-                    aria-hidden="true"
-                  >
-                    <a href={project.liveHref} target="_blank">
-                      <ArrowTopRightOnSquareIcon className="w-5 h-5" />
-                    </a>
-                  </span>
+                  {project.repoHref 
+                    ? <span
+                        className="text-slate-400 hover:text-broncos-orange transition duration-300"
+                        aria-hidden="true"
+                      >
+                        <a href={project.repoHref} target="_blank">
+                          <CodeBracketIcon className="w-5 h-5" />
+                        </a>
+                      </span>
+                    : null
+                  }
+                  {project.liveHref
+                    ? <span
+                        className="text-slate-400 hover:text-broncos-orange transition duration-300 ml-2"
+                        aria-hidden="true"
+                      >
+                        <a href={project.liveHref} target="_blank">
+                          <ArrowTopRightOnSquareIcon className="w-5 h-5" />
+                        </a>
+                      </span>
+                    : null
+                  }
                 </div>
               </div>
             </div>
